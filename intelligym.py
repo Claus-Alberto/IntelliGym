@@ -73,14 +73,14 @@ def register_gym():
     #     "nome": "",
     #     "email": "",
     #     "endereco": "",
-    #     "senha": ""
+    #     "senha": "",
     #     "cnpj": ""
     # }
 
     # Tratamento aqui
     
     response_json = {
-        'success' : 'Aluno criado com sucesso'
+        'success' : 'Academia criado com sucesso'
     }
     
     return Response(
@@ -95,7 +95,7 @@ def get_gym():
 
     # Exemplo de JSON
     # {
-    #     'id' : 'id da academia aqui'
+    #     "id" : "id da academia aqui"
     # }
 
     # Tratamento aqui
@@ -119,8 +119,8 @@ def get_matricula():
 
     # Exemplo de JSON
     # {
-    #     'idAluno' : 'id do aluno',
-    #     'idAcademia' : 'id da Academia'
+    #     "idAluno" : "id do aluno",
+    #     "idAcademia" : "id da Academia"
     # }
 
     # Tratamento aqui
@@ -144,7 +144,7 @@ def get_dados_corporais():
 
     # Exemplo de JSON
     # {
-    #     'idAluno' : 'id do aluno'
+    #     "idAluno" : "id do aluno"
     # }
 
     # Tratamento aqui
@@ -181,8 +181,8 @@ def set_dados_corporais():
         # "aguaCorporal": 0.0,
         # "metabolismoBasal": 0,
         # "ingestaoCaloricaRec": 0,
-        # "pgc": 0.0
-        # idAluno: ''
+        # "pgc": 0.0,
+        # "idAluno": ""
     # }
 
     # Tratamento aqui
@@ -252,7 +252,7 @@ def get_ficha():
 
     # Exemplo de JSON
     # {
-    #     'idAluno' : 'id do aluno'
+    #     "idAluno" : "id do aluno"
     # }
 
     # Tratamento aqui
@@ -276,12 +276,12 @@ def set_ficha():
 
     # Exemplo de JSON
     # {
-        # "dataInicial": 0,
-        # "dataFinal": 0,
-        # "divisoes": 0,
-        # "exercicios": ['Execícios aqui']
-        # idAluno: ''
-        # idTreinador: ''
+    #    "dataInicial": 0,
+    #    "dataFinal": 0,
+    #    "divisoes": 0,
+    #    "exercicios": ['Execícios aqui']
+    #    idAluno: ''
+    #    idTreinador: ''
     # }
 
     # Tratamento aqui
