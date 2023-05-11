@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IntelliGym - Cadastro</title>
+    <link rel="stylesheet" href="../static/style.css">
 </head>
-<body>
-    <div>
+<body class="initial">
+    <div class="content">
         <h1>Cadastro</h1>
-        <div>
+        <div class="fields">
             <input type="text" placeholder="Nome Completo">
             <input type="email" placeholder="Email">
             <input type="date" placeholder="Data de Nascimento">
@@ -19,9 +20,9 @@
             <button>Próximo</button>
         </div>
     </div>
-    <div style="display:none">
+    <div class="content" style="display:none">
         <h1>Cadastro</h1>
-        <div>
+        <div class="fields">
             <select name="Frequência de Treino" id="Frequência de Treino">
                 <option value="" disabled selected>Frequência de Treino</option>
                 <option value="1x/Semana">1x/Semana</option>
@@ -39,9 +40,9 @@
             <button>Próximo</button>
         </div>
     </div>
-    <div style="display:none">
+    <div class="content" style="display:none">
         <h1>Objetivo</h1>
-        <div>
+        <div class="fields">
             <input type="number" placeholder="Peso Desejado">
             <input type="number" placeholder="% de Massa Muscular Desejado">
             <input type="number" placeholder="% De Gordura Desejado">
