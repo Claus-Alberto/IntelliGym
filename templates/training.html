@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliGym - Treino</title>
+    <link rel="stylesheet" href="../static/training.css">
+</head>
+<body>
+    <header>
+        <h1>IntelliGym</h1>
+    </header>
+
+    <section class="container">
+        <div class="training_intro">
+            <img src="../static/images/leg.svg" alt="">
+            <div class="content">
+                <h2>Treino de Pernas</h2>
+                <div class="content_div">
+                    <div>
+                        <p>Inicio: 06/05/2023</p>
+                        <p>Final: 06/07/2023</p>
+                    </div>
+                    <div>
+                        <p>Instrutor:</p>
+                        <p>Claus Alberto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Exercícios</h2>
+        <div class="exercises">
+            {% for a in range(6) %}
+                <div class="exercise">
+                    <div class="details">
+                        <h3>Leg Press</h3>
+                        <div class="information">
+                            <p>Séries: 4</p>
+                            <p>Repetições: 15</p>
+                            <p>Peso: 250kg</p>
+                        </div>
+                    </div>
+                    <button>
+                        OK
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <a href="/progress"><img src="../static/images/progress.svg" alt="progress"></a>
+        <a href="/target"><img src="../static/images/target.svg" alt="target"></a>
+        <a href="/main"><img src="../static/images/home.svg" alt="main"></a>
+        <a href="/training" class="selected"><img src="../static/images/training.svg" alt="training"></a>
+        <a href="/profile"><img src="../static/images/profile.svg" alt="profile"></a>
+    </footer>
+</body>
+</html>

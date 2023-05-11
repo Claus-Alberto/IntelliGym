@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body {
+    all: unset;
+    min-height: 100vh;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #FF4E00;
+    width: 100%;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+div.training_intro {
+    all: unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 400px;
+    padding: 18px 31px;
+}
+
+div.training_intro img {
+    height: 75px;
+}
+
+div.training_intro .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.training_intro .content h2 {
+    all: unset;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 40px;
+}
+
+div.training_intro .content .content_div {
+    all: unset;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+div.training_intro .content .content_div p {
+    all: unset;
+    display: block;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 18px;
+}
+
+section.container > h2 {
+    all: unset;
+    color: #FFFFFF;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 40px;
+}
+
+div.exercises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 462px;
+    width: 462px;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+div.exercises::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+div.exercises::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.144);        /* color of the tracking area */
+    border-radius: 10px;
+}
+  
+div.exercises::-webkit-scrollbar-thumb {
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #FF4E00;  /* creates padding around scroll thumb */
+    background-color: #FF4E00;    /* color of the scroll thumb */
+}
+
+div.exercises .exercise {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+div.exercises .exercise .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
+    padding-left: 40px;
+    width: 100%;
+}
+
+div.exercises .exercise .details h3 {
+    all: unset;
+    display: block;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+}
+
+div.exercises .exercise .details .information {
+    display: flex;
+    gap: 15px;
+}
+
+div.exercises .exercise .details .information p {
+    all: unset;
+    display: block;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 18px;
+}
+
+div.exercises .exercise > button {
+    all: unset;
+    height: 96px;
+    background-color: #FF4E00;
+    color: #FFFFFF;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 40px;
+    padding: 0 25px;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+footer a.selected {
+    width: 65px;
+    height: 65px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    align-self: flex-end;
+}
+
+footer a img {
+    width: 27px;
+    height: 27px;
+}
+
+footer a.selected img {
+    width: 32px;
+    height: 32px;
+}
