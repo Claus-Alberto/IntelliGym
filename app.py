@@ -47,5 +47,9 @@ def main():
 def training():
     return render_template('training.html')
 
+@app.route("/target/")
+def target():
+    return render_template('target.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
