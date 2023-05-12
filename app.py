@@ -62,14 +62,12 @@ def profile():
 def progress():
     return render_template('commingsoon.html')
 
-
-@app.route('/login', methods=['POST'])
+@app.route('/api/v1/login', methods=['POST'])
 def login():
     access_token = create_access_token(identity='username')
     return jsonify({'access_token': access_token})
 
-
-@app.route('/treino', methods=['GET'])
+@app.route('/api/v2/treino', methods=['GET'])
 @jwt_required()  # decora a rota com @jwt_required para exigir autenticação
 def protected():
     data = {
