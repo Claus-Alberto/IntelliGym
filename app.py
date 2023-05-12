@@ -51,5 +51,13 @@ def training():
 def target():
     return render_template('target.html')
 
+@app.route("/profile/")
+def profile():
+    return render_template('commingsoon.html')
+
+@app.route("/progress/")
+def progress():
+    return render_template('commingsoon.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
