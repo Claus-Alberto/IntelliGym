@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body class="initial">
+    <div id="error" class="error invisible">
+        <p>Credenciais Inválidas!</p>
+        <button onclick="esconderErro()">X</button>
+    </div>
     <div class="content">
         <h1>IntelliGym</h1>
         <div class="fields">
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <a class="button" href="/main">Logar</a>
+            <input id="user" type="text" placeholder="Usuário">
+            <input id="password" type="password" placeholder="Senha">
+            <a id="login" class="button" href="/main">Logar</a>
             <p>OU</p>
             <a href="/register">Não tem uma conta?</a>
         </div>
@@ -23,4 +27,39 @@
         </div>
     </div>
 </body>
+<script>
+    // Obtém o elemento âncora pelo ID
+    const linkElement = document.getElementById('login');
+
+    // Obtém a div pelo ID
+    const divElement = document.getElementById('error');
+
+    // Adiciona um ouvinte de evento de clique ao link
+    linkElement.addEventListener('click', function(event) {
+        
+        event.preventDefault();
+
+        var userElement = document.getElementById('user');
+
+        var passElement = document.getElementById('password');
+
+        if (userElement.value == 'Rogerio' && passElement.value == '1234') {
+            // Se a condição for atendida, segue para o link
+            window.location.href = linkElement.href;
+        } else {
+            // Caso contrário, remove a classe 'invisible' da div
+            divElement.classList.remove('invisible');
+        }
+
+        // Impede o comportamento padrão do link (não redireciona para o href)
+    });
+
+    function esconderErro() {
+        // Obtém o elemento pelo ID
+        const errorElement = document.getElementById('error');
+      
+        // Adiciona a classe 'invisible' ao elemento
+        errorElement.classList.add('invisible');
+    }
+</script>
 </html>

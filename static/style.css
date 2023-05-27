@@ -279,3 +279,31 @@ body.main footer a.selected{
     border-radius: 65px;
     align-self: flex-end;
 }
+
+.error {
+    position: absolute;
+    top: 25px;
+    margin: 0 auto;
+    background-color: #ff4242;
+    width: 98%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error p {
+    padding: 0 30px;
+}
+
+.error button {
+    all: unset;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
