@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body {
+    all: unset;
+    min-height: 100vh;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #FF4E00;
+    width: 100%;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+section.container {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+footer a.selected {
+    width: 65px;
+    height: 65px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    align-self: flex-end;
+}
+
+footer a img {
+    width: 27px;
+    height: 27px;
+}
+
+footer a.selected img {
+    width: 32px;
+    height: 32px;
+}

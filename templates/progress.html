@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliGym - Objetivos</title>
+    <link rel="stylesheet" href="../static/progress.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+<body>
+    <header>
+        <h1>IntelliGym</h1>
+    </header>
+
+    <section class="container">
+        <div style="width: 280px;"><canvas id="peso"></canvas></div>
+        <div style="width: 280px;"><canvas id="gordura"></canvas></div>
+        <div style="width: 280px;"><canvas id="musculo"></canvas></div>
+        <div style="width: 280px;"><canvas id="liquido"></canvas></div>
+    </section>
+
+    <footer>
+        <a href="/progress" class="selected"><img src="../static/images/progress.svg" alt="progress"></a>
+        <a href="/target" ><img src="../static/images/target.svg" alt="target"></a>
+        <a href="/main"><img src="../static/images/home.svg" alt="main"></a>
+        <a href="/training"><img src="../static/images/training.svg" alt="training"></a>
+        <a href="/profile"><img src="../static/images/profile.svg" alt="profile"></a>
+    </footer>
+</body>
+<script>
+    (async function() {
+        const data = [
+            { month: 1, weight: 75 },
+            { month: 2, weight: 76 },
+            { month: 3, weight: 78 },
+            { month: 4, weight: 76 },
+            { month: 5, weight: 78 },
+            { month: 6, weight: 80 },
+            { month: 7, weight: 80 },
+        ];
+    
+        new Chart(
+            document.getElementById('peso'),
+            {
+                type: 'line',
+                data: {
+                    labels: data.map(row => row.month),
+                    datasets: [
+                        {
+                            label: 'Peso em kg',
+                            data: data.map(row => row.weight),
+                            backgroundColor: '#FF4E00',
+                            borderColor: '#FF4E00'
+                        }
+                    ]
+                }
+            }
+        );
+        const dataGordura = [
+            { month: 1, weight: 25 },
+            { month: 2, weight: 24 },
+            { month: 3, weight: 23 },
+            { month: 4, weight: 20 },
+            { month: 5, weight: 18 },
+            { month: 6, weight: 20 },
+            { month: 7, weight: 18 },
+        ];
+    
+        new Chart(
+            document.getElementById('gordura'),
+            {
+                type: 'line',
+                data: {
+                    labels: dataGordura.map(row => row.month),
+                    datasets: [
+                        {
+                            label: '% de Gordura',
+                            data: dataGordura.map(row => row.weight),
+                            backgroundColor: '#f83a3a',
+                            borderColor: '#f83a3a'
+                        }
+                    ]
+                }
+            }
+        );
+        const dataMusculo = [
+            { month: 1, weight: 34 },
+            { month: 2, weight: 35 },
+            { month: 3, weight: 37 },
+            { month: 4, weight: 37 },
+            { month: 5, weight: 36 },
+            { month: 6, weight: 38 },
+            { month: 7, weight: 40 },
+        ];
+    
+        new Chart(
+            document.getElementById('musculo'),
+            {
+                type: 'line',
+                data: {
+                    labels: dataMusculo.map(row => row.month),
+                    datasets: [
+                        {
+                            label: '% de Massa Muscular',
+                            data: dataMusculo.map(row => row.weight),
+                            backgroundColor: '#00ff2f',
+                            borderColor: '#00ff2f'
+                        }
+                    ]
+                }
+            }
+        );
+        const dataLiquido = [
+            { month: 1, weight: 25 },
+            { month: 2, weight: 23 },
+            { month: 3, weight: 23 },
+            { month: 4, weight: 24 },
+            { month: 5, weight: 22 },
+            { month: 6, weight: 21 },
+            { month: 7, weight: 19 },
+        ];
+    
+        new Chart(
+            document.getElementById('liquido'),
+            {
+                type: 'line',
+                data: {
+                    labels: dataLiquido.map(row => row.month),
+                    datasets: [
+                        {
+                            label: '% de Água Corporal',
+                            data: dataLiquido.map(row => row.weight),
+                            backgroundColor: '#00d0ff',
+                            borderColor: '#00d0ff'
+                        }
+                    ]
+                }
+            }
+        );
+    })();
+</script>
+</html>

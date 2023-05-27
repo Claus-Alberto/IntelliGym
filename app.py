@@ -60,7 +60,7 @@ def profile():
 
 @app.route("/progress/")
 def progress():
-    return render_template('commingsoon.html')
+    return render_template('progress.html')
 
 @app.route('/api/v1/login', methods=['POST'])
 def login():
