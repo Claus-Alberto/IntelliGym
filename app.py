@@ -56,7 +56,7 @@ def target():
 
 @app.route("/profile/")
 def profile():
-    return render_template('commingsoon.html')
+    return render_template('profile.html')
 
 @app.route("/progress/")
 def progress():

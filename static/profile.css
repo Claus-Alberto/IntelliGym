@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body {
+    all: unset;
+    min-height: 100vh;
+    background-color: #2A2A2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #FF4E00;
+    width: 100%;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+section.container {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+section.container .profile_intro {
+    all: unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 300px;
+}
+
+section.container .profile_intro .profile_intro_content {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+section.container .profile_intro .profile_intro_content h2 {
+    all: unset;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+section.container .profile_intro .profile_intro_content div {
+    all: unset;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+
+section.container .profile_intro .profile_intro_content div p {
+    all: unset;
+    color: #fe7f47;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+section.container .profile_content {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 300px;
+}
+
+section.container .profile_content .profile_content_item{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    gap: 5px;
+}
+
+section.container .profile_content .profile_content_item label{
+    all: unset;
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 16px;
+}
+
+section.container .profile_content .profile_content_item input{
+    color: #FF4E00;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 16px;
+}
+
+section.container .profile_content .profile_content_submit input{
+    all: unset;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 16px;
+    background-color: #FF4E00;
+}
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+footer a.selected {
+    width: 65px;
+    height: 65px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 65px;
+    align-self: flex-end;
+}
+
+footer a img {
+    width: 27px;
+    height: 27px;
+}
+
+footer a.selected img {
+    width: 32px;
+    height: 32px;
+}
